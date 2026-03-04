@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="E-Notice Board — Real-time campus announcements for Uganda Christian University. The Source of Truth for every student and staff member." />
+  <title>E-Notice Board — The Source of Truth</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="../Enotice_favicon.jpeg" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER  —  Logo + Navigation
+       ═══════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" id="logo">
+        <img src="../enotice_logo.jpeg" alt="E-Notice Board Logo" class="logo__img" />
+        <div class="logo__text">E-Notice<span>Board</span></div>
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav__list" id="nav-list">
+          <li><a href="index.html" class="nav__link nav__link--active" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav__link" id="nav-about">About</a></li>
+          <li><a href="contact.html" class="nav__link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HERO  —  UVP Headline + CTA
+       F-pattern: primary horizontal scan area
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+
+      <div class="hero__content">
+        <div class="hero__badge fade-up">📋 The Source of Truth</div>
+
+        <h1 class="hero__title fade-up fade-up--d1">
+          Real-Time Campus Notices, <span>Delivered Instantly</span> to Every Student
+        </h1>
+
+        <p class="hero__subtitle fade-up fade-up--d2">
+          E-Notice Board is the official digital notice platform for Uganda Christian University's
+          Department of Computing and Technology. Students log in with their registration number
+          to receive instant, offline-cached alerts for results, timetables, and critical memos.
+          No paper. No delays. No excuses.
+        </p>
+
+        <a href="#features" class="cta-btn fade-up fade-up--d3" id="cta-hero">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Visual: notice preview card -->
+      <div class="hero__visual fade-up fade-up--d4">
+        <div class="hero__card">
+          <div class="hero__card-header">
+            <div class="hero__card-dot hero__card-dot--red"></div>
+            <div class="hero__card-dot hero__card-dot--gold"></div>
+            <div class="hero__card-dot hero__card-dot--navy"></div>
+            <div class="hero__card-title">Latest Notices</div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-icon notice-icon--urgent">🔴</div>
+            <div>
+              <div class="notice-title">Exam Timetable Released</div>
+              <div class="notice-meta">Dept. of Computing · 2 hours ago</div>
+              <span class="notice-badge notice-badge--urgent">Urgent</span>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-icon notice-icon--info">📄</div>
+            <div>
+              <div class="notice-title">Course Registration Deadline</div>
+              <div class="notice-meta">Academic Office · 5 hours ago</div>
+              <span class="notice-badge notice-badge--new">New</span>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-icon notice-icon--success">✅</div>
+            <div>
+              <div class="notice-title">Results Published — BSc IT</div>
+              <div class="notice-meta">Examinations Board · 1 day ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FEATURES  —  F-pattern second scan line
+       ═══════════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="features__inner">
+
+      <div class="section-label">Why E-Notice Board?</div>
+      <h2 class="section-title">Accessible. Efficient. Essential.</h2>
+      <p class="section-subtitle">
+        Say goodbye to missed deadlines and overcrowded notice boards.
+        Your source of truth, always in your pocket.
+      </p>
+
+      <div class="features__grid">
+
+        <div class="feature-card fade-up">
+          <div class="feature-card__icon feature-card__icon--navy">📱</div>
+          <h3 class="feature-card__title">Instant Mobile Access</h3>
+          <p class="feature-card__text">
+            Receive every notice the moment it's posted. Log in with your registration
+            number and stay updated anywhere on campus — or even off-campus with offline caching.
+          </p>
+        </div>
+
+        <div class="feature-card fade-up fade-up--d1">
+          <div class="feature-card__icon feature-card__icon--red">⚡</div>
+          <h3 class="feature-card__title">Zero Missed Deadlines</h3>
+          <p class="feature-card__text">
+            Critical memos, exam timetables, and registration alerts delivered in real time.
+            Priority badges highlight what matters most so nothing slips through.
+          </p>
+        </div>
+
+        <div class="feature-card fade-up fade-up--d2">
+          <div class="feature-card__icon feature-card__icon--gold">🔒</div>
+          <h3 class="feature-card__title">Secure &amp; Reliable</h3>
+          <p class="feature-card__text">
+            Built for the Department of Computing and Technology with role-based access.
+            Notices are verified, time-stamped, and automatically archived for reference.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATS STRIP — Trust signals
+       ═══════════════════════════════════════ -->
+  <section class="stats" id="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <div class="stat__number">6+</div>
+        <div class="stat__label">Academic Programs Served</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">24/7</div>
+        <div class="stat__label">Always Available</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">0</div>
+        <div class="stat__label">Missed Notices</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">100%</div>
+        <div class="stat__label">Paperless Delivery</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT TEASER — F-pattern left scan area
+       ═══════════════════════════════════════ -->
+  <section class="about-teaser" id="about-teaser">
+    <div class="about-teaser__inner">
+
+      <div class="about-teaser__content fade-up">
+        <div class="section-label">About the Project</div>
+        <h2 class="section-title" style="text-align:left;">Built for UCU's Department of Computing</h2>
+        <p class="section-subtitle" style="text-align:left; margin:0 0 1.5rem;">
+          E-Notice Board was conceived to eliminate the chaos of physical notice boards on campus.
+          Designed as a mobile-first platform, it ensures that every student — from Diploma to Masters level —
+          receives verified announcements with priority tagging, offline support, and instant search.
+        </p>
+        <a href="about.html" class="construction__btn" id="cta-learn-more">
+          Learn More
+        </a>
+      </div>
+
+      <div class="about-teaser__visual fade-up fade-up--d2">
+        <div class="about-teaser__illustration">
+          <div class="about-illust-row">
+            <div class="about-illust-dot" style="background:var(--gold)"></div>
+            <div class="about-illust-bar" style="background:rgba(241,196,15,0.3); width:80%"></div>
+          </div>
+          <div class="about-illust-row">
+            <div class="about-illust-dot" style="background:var(--red)"></div>
+            <div class="about-illust-bar" style="background:rgba(200,16,46,0.2); width:65%"></div>
+          </div>
+          <div class="about-illust-row">
+            <div class="about-illust-dot" style="background:var(--white)"></div>
+            <div class="about-illust-bar" style="background:rgba(255,255,255,0.15); width:90%"></div>
+          </div>
+          <div class="about-illust-row">
+            <div class="about-illust-dot" style="background:var(--gold)"></div>
+            <div class="about-illust-bar" style="background:rgba(241,196,15,0.3); width:50%"></div>
+          </div>
+          <div class="about-illust-row">
+            <div class="about-illust-dot" style="background:var(--red)"></div>
+            <div class="about-illust-bar" style="background:rgba(200,16,46,0.2); width:75%"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA SECTION — Final high-contrast call
+       ═══════════════════════════════════════ -->
+  <section class="cta-section" id="cta-section">
+    <div class="cta-section__inner fade-up">
+      <h2 class="cta-section__title">Ready to Stay Informed?</h2>
+      <p class="cta-section__text">
+        Join hundreds of students who never miss a campus announcement.
+        Access your notices anytime, anywhere — even offline.
+      </p>
+      <a href="contact.html" class="cta-btn cta-btn--light" id="cta-bottom">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">E-Notice<span>Board</span></div>
+      <div class="footer__links">
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="about.html" class="footer__link">About</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 E-Notice Board · Uganda Christian University · Department of Computing &amp; Technology
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       SCRIPT — Mobile nav toggle
+       ═══════════════════════════════════════ -->
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav--open');
+      toggle.setAttribute('aria-expanded',
+        navList.classList.contains('nav--open'));
+    });
+
+    // Close nav when a link is clicked (mobile)
+    navList.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('nav--open');
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
